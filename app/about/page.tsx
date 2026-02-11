@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import HeroWithSlider from "@/components/HeroWithSlider";
 
 export const metadata: Metadata = {
     title: "About Us",
@@ -14,7 +15,10 @@ export default function About() {
             <Navigation />
             <main>
                 <section className="hero-section">
-                    <div className="container">
+                    <HeroWithSlider
+                        images={["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"]}
+                        themes={["dark", "dark", "dark", "light"]}
+                    >
                         <div className="hero-content">
                             <h1 className="hero-title">
                                 About <span className="hero-highlight">Tenda 360</span>
@@ -23,7 +27,7 @@ export default function About() {
                                 Bridging the gap between brands and consumers since our inception
                             </p>
                         </div>
-                    </div>
+                    </HeroWithSlider>
                 </section>
 
                 <section className="section">

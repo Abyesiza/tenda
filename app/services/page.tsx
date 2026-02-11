@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import HeroWithSlider from "@/components/HeroWithSlider";
 
 export const metadata: Metadata = {
     title: "Our Services",
@@ -14,7 +15,10 @@ export default function Services() {
             <Navigation />
             <main>
                 <section className="hero-section">
-                    <div className="container">
+                    <HeroWithSlider
+                        images={["/images/2.jpg", "/images/3.jpg"]}
+                        themes={["dark", "dark"]}
+                    >
                         <div className="hero-content">
                             <h1 className="hero-title">
                                 Our <span className="hero-highlight">Services</span>
@@ -23,7 +27,7 @@ export default function Services() {
                                 Comprehensive marketing solutions designed to drive growth and build lasting customer relationships
                             </p>
                         </div>
-                    </div>
+                    </HeroWithSlider>
                 </section>
 
                 <section className="section">

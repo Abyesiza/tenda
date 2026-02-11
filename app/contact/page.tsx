@@ -13,8 +13,8 @@ export default function Contact() {
         <>
             <Navigation />
             <main>
-                <section className="hero-section">
-                    <div className="container">
+                <section className="hero-section hero-section-contact">
+                    <div className="container hero-theme-light">
                         <div className="hero-content">
                             <h1 className="hero-title">
                                 Contact <span className="hero-highlight">Us</span>
@@ -26,7 +26,7 @@ export default function Contact() {
                     </div>
                 </section>
 
-                <section className="section">
+                <section className="section section-contact">
                     <div className="container">
                         <div className="contact-grid">
                             <div className="contact-info">

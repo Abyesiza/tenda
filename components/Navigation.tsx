@@ -33,7 +33,7 @@ export default function Navigation() {
                         />
                         <div className="logo-text">
                             <span className="logo-main">Tenda 360</span>
-                            <span className="logo-accent">Limited</span>
+                            <span className="logo-accent">Marketing Agency</span>
                         </div>
                     </Link>
 
